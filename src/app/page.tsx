@@ -1,7 +1,6 @@
 import {
   ArrowForward,
   BarChart,
-  Expand,
   ExpandMore,
   Groups,
   Lock,
@@ -20,16 +19,12 @@ import {
   Grid2,
   Paper,
   Stack,
-  TextField,
   Typography,
 } from "@mui/material";
 import {
   blue,
-  blueGrey,
   orange,
   teal,
-  cyan,
-  purple,
   red,
 } from "@mui/material/colors";
 import Image from "next/image";
