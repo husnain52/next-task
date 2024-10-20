@@ -21,12 +21,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import {
-  blue,
-  orange,
-  teal,
-  red,
-} from "@mui/material/colors";
+import { blue, orange, teal, red } from "@mui/material/colors";
 import Image from "next/image";
 
 export default function Home() {
@@ -94,8 +89,8 @@ export default function Home() {
                     "Protect your project's sensitive information with Taskify's top-notch security features. Our platform ensures that your data is encrypted and accessible only to authorized users, keeping your projects safe and secure.",
                   icon: <Lock sx={{ fontSize: 30, color: red[400] }} />,
                 },
-              ].map((item) => (
-                <Grid2 size={{ md: 10, lg: 6, sm: 12 }}>
+              ].map((item, index) => (
+                <Grid2 key={index + 1} size={{ md: 10, lg: 6, sm: 12 }}>
                   <Box>
                     <Stack spacing={2}>
                       <Stack
@@ -209,8 +204,8 @@ export default function Home() {
                   q: "How easy is it to get started with this Task Management application?",
                   a: "It’s as easy as signing up and adding your first tasks! Our intuitive interface ensures that even new users can get up and running quickly. Plus, with our support team available to guide you, you’ll be optimizing your workflow in no time.",
                 },
-              ].map(({ q, a }) => (
-                <Accordion>
+              ].map(({ q, a }, index) => (
+                <Accordion key={index + 1}>
                   <AccordionSummary
                     expandIcon={<ExpandMore />}
                     aria-controls="panel1-content"
