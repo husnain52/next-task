@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { ReactNode } from "react";
 
-export default function DashboardLayout({children}) {
+interface DashboardLayoutProps {
+  children: ReactNode;
+}
+
+export default function DashboardLayout({ children }: DashboardLayoutProps) {
   return (
-    <div>{children}</div>
-  )
+    <>
+      <div>{children}</div>
+    </>
+  );
 }

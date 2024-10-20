@@ -1,8 +1,13 @@
 import { Box, Container, CssBaseline } from "@mui/material";
 import Header from "../Header";
 import Footer from "../Footer";
+import { ReactNode } from "react";
 
-const MainLayout = ({ children }) => {
+interface MyComponentProps {
+  children: ReactNode;
+}
+
+const MainLayout: React.FC<MyComponentProps> = ({ children }) => {
   return (
     <Box
       sx={{
