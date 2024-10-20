@@ -1,6 +1,5 @@
 import { createTheme } from "@mui/material";
-import '@fontsource/poppins'; // Import the font
-
+import "@fontsource/poppins"; // Import the font
 
 const theme = createTheme({
   palette: {
@@ -20,20 +19,27 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: 'Poppins, Arial, sans-serif', // Use Poppins
+    fontFamily: "Poppins, Arial, sans-serif", // Use Poppins
     h1: {
       fontSize: "2.5rem",
-      fontWeight: 700,
-      color: "#000000",
+      fontWeight: 900,
     },
     h2: {
       fontSize: "2rem",
-      fontWeight: 600,
-      color: "#000000",
+      fontWeight: 900,
+    },
+    h3: {
+      fontWeight: 900,
+    },
+    h4: {
+      fontWeight: 900,
+    },
+    h5: {
+      fontWeight: 900,
+      margin: "10px 0px"
     },
     body1: {
       fontSize: "1rem",
-      color: "#4f4f4f",
     },
     button: {
       textTransform: "none", // Disable uppercase transformation on buttons for a modern look
@@ -77,6 +83,15 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           boxShadow: "0px 0px 1px 0px rgba(0,0,0,0.75)", // Even lighter shadow for minor elements like cards
+        },
+      },
+    },
+    MuiContainer: {
+      styleOverrides: {
+        root: {
+          "&.MuiContainer-maxWidthMd": {
+            maxWidth: "1300px",
+          },
         },
       },
     },

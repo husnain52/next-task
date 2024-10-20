@@ -19,6 +19,7 @@ const MainLayout = ({ children }) => {
           flexGrow: 1,
           py: 2,
         }}
+        maxWidth='md'
       >
         {children}
       </Container>
