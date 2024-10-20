@@ -143,7 +143,7 @@ export default function Home() {
                 </CardContent>
                 <CardActions>
                   <Button size="small">
-                    Learn More <ArrowForward fontSize="12px" sx={{ ml: 1 }} />
+                    Learn More <ArrowForward sx={{ ml: 1, fontSize: 15 }} />
                   </Button>
                 </CardActions>
               </Card>
