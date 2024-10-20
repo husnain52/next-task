@@ -2,7 +2,7 @@
 import MainLayout from "@/components/Layout";
 import { ThemeProvider } from "@mui/material";
 import { theme } from "@/utils/theme";
-import "../styles/globals.css";
+import "@/styles/globals.css";
 
 export default function RootLayout({
   children,
@@ -11,7 +11,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body style={{ lineHeight: "5px" }}>
+      <body>
         <ThemeProvider theme={theme}>
           <MainLayout>{children}</MainLayout>
         </ThemeProvider>
